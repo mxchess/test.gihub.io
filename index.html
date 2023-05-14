@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ghi chú</title>
+    <style>
+        /* CSS cho giao diện */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #notes-container {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        #note-form {
+            display: flex;
+        }
+        #note-input {
+            flex: 1;
+            padding: 5px;
+        }
+        #note-submit {
+            padding: 5px 10px;
+            margin-left: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .note-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+        .note-item button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ghi chú</h1>
+    <div id="notes-container">
+        <form id="note-form">
+            <input type="text" id="note-input" placeholder="Thêm ghi chú" />
+            <button type="submit" id="note-submit">Thêm</button>
+        </form>
+        <div id="note-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
